@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>форма</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
@@ -21,17 +21,17 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item ">
-            <a href="index.html">
+            <a  class="site-list__link" href="index.html">
               ГЛАВНАЯ
             </a>
           </li>
           <li class="site-list__item">
-            <a href="catalog.html">
+            <a  class="site-list__link" href="catalog.html">
               КАТАЛОГ ПРОДУКЦИИ
             </a>
           </li>
           <li class="site-list__item site-list__item--current">
-            <a>
+            <a  class="site-list__link">
               ПОДБОР ПРОГРАММЫ
             </a>
           </li>
@@ -40,12 +40,12 @@
     </nav>
   </header>
   <main class="main-box">
-    <h1 class="form-title">Подбор программы</h1>
-    <p class="form-subtitle">
+    <form class="form" action="https://echo.htmlacademy.ru/" method="get">
+      <h1 class="form__title">Подбор программы</h1>
+    <p class="form__subtitle">
       Заполните анкету, и мы подберем<br>
       программу питания для вашего кота
     </p>
-    <form class="form" action="https://echo.htmlacademy.ru/" method="get">
       <fieldset class="personal-data">
         <ul class="personal-data__list">
           <li class="personal-data__item">
@@ -111,14 +111,14 @@
           <li class="contact-data__item">
             <label class="contact-data__number">
               <span class="contact-data__text">ТЕЛЕФОН:*</span>
-              <input class="contact-data__inpput" type="number" placeholder="8 (960) 900-60-90" name="tel.number">
+              <input class="contact-data__input" type="number" placeholder="8 (960) 900-60-90" name="tel.number">
             </label>
           </li>
         </ul>
       </fieldset>
       <fieldset class="comments">
         <legend class="comments__text">Коментарий</legend>
-        <input class="comments__input" type="text" placeholder="РАССКАЖИТЕ ОБО ВСЕХ ПОВАДКАХ КОТА" name="comment">
+        <textarea class="comments__input" type="" placeholder="РАССКАЖИТЕ ОБО ВСЕХ ПОВАДКАХ КОТА" name="comment"></textarea>
       </fieldset>
       <fieldset class="additionally">
         <legend class="additionally__title">Дополнительно</legend>
@@ -154,8 +154,9 @@
         </ul>
       </fieldset>
       <input class="form__button" type="submit">
+      <p class="form__necessarily-text">* — Обязательные поля</p>
     </form>
-    <p class="necessarily-text">* — Обязательные поля</p>
+
   </main>
   <footer class="footer-box footer">
     <section class="map">
