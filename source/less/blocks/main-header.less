@@ -1,0 +1,31 @@
+.main-header {
+  display: flex;
+  flex-direction: column;
+  min-height: 65px;
+  width: 280px;
+  padding: 0 20px;
+}
+
+.main-header__logo {
+  text-decoration: none;
+}
+
+@media (min-width: @tablet-width) {
+  .main-header {
+    width: 708px;
+    padding: 0 30px;
+    flex-direction: row;
+  }
+
+  .main-header__logo {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-header {
+    width: 1220px;
+    padding: 0 110px;
+  }
+}
