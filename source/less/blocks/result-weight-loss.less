@@ -1,11 +1,40 @@
 .result-weight-loss__result {
   .oswald400();
   font-size: 24px;
+  width: 82px;
+  height: 24px;
+  text-align: center;
+  line-height: 24px;
+  margin: 14.5px auto 0;
+
+  @media (min-width: @tablet-width) {
+    margin: 15px auto 0;
+    font-size: 30px;
+    line-height: 37px;
+    width: 102px;
+    height: 37px;
+  }
 }
 
 .result-weight-loss__title {
   .lato400();
   font-size: 12px;
-  line-height: 100%;
+  line-height: 12px;
   .base-color();
+  width: 77px;
+  height: 24px;
+  margin: 7.5px auto 0;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    height: 14px;
+    width: 125px;
+    font-size: 14px;
+    line-height: 14px;
+    margin-top: 11px;
+  }
+
+  >br {
+    display: none;
+  }
 }

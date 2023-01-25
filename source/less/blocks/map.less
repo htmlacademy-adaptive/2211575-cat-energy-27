@@ -1,7 +1,57 @@
+.map__box {
+  min-height: 474px;
+  width: 280px;
+
+  @media (min-width: @tablet-width) {
+    min-height: 599px;
+    width: 708px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 400px;
+    width: 1440px;
+  }
+}
+
+.map__info-box {
+  display: flex;
+  min-height: 112px;
+
+  @media (min-width: @tablet-width) {
+    min-height: 198px;
+  }
+
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    background: #ffffff;
+    height: 198px;
+    width: 565px;
+    margin: 95px 0 0 0;
+  }
+}
+
 .map__invite {
   .oswald400();
   font-size: 16px;
   line-height: 20px;
+  margin: 26px 2px 0 0;
+  width: 139px;
+  height: 60px;
+
+  @media (min-width: @tablet-width) {
+    width: 171px;
+    height: 83px;
+    margin: 60px 296px 0 40px;
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 163px;
+    height: 82px;
+    margin: 60px 87px 0 80px;
+  }
 }
 
 .map__address {
@@ -9,4 +59,41 @@
   font-size: 14px;
   line-height: 20px;
   .base-color();
+  width: 139px;
+  height: 60px;
+  margin: 26px 0 0 0;
+
+  @media (min-width: @tablet-width) {
+    width: 160px;
+    height: 80px;
+    margin: 56px 0 0 0;
+    text-align: right;
+    font-size: 16px;
+  }
+}
+
+.map__mobile--none {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+}
+
+.map__frame {
+  border: none;
+  display: block;
+  margin: 0 -20px;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+    height: 400px;
+    margin: 0 -30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1440px;
+    height: 400px;
+    margin: 0 -110px;
+  }
 }
