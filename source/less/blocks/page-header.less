@@ -1,15 +1,28 @@
 .page-header {
   .oswald400();
+  margin: 0 auto;
+  width: 320px;
+
+  @media (min-width: @tablet-width) {
+    width: 708px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+  }
 }
 
 .page-header__box {
-  background: url("../img/background-cat-mobile.png")  no-repeat;
+  display: flex;
+  flex-direction: column;
   width: 320px;
   min-height: 480px;
 }
 
 .page-header__background-cat {
   position: absolute;
+  left: auto;
+  right: auto;
 }
 
 .page-header__title {
@@ -39,6 +52,16 @@
 
 .page-header__button {
   margin: auto auto 0;
+  width: 280px;
+  height: 40px;
   text-decoration: none;
   .btn-color();
+}
+
+.page-header__button-text {
+  .oswald400();
+  text-align: center;
+  width: 192px;
+  margin: 10px 44px;
+  font-size: 14px;
 }
