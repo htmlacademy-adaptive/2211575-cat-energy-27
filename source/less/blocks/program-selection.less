@@ -1,3 +1,49 @@
+.program-selection {
+  height: 100%;
+  width: 280px;
+  padding: 0 20px;
+  border: none;
+  border-bottom: #d9d9d9 solid 1px;
+  margin: 22px 0 0 0;
+
+  @media (min-width: @tablet-width) {
+    width: 630px;
+    padding: 0;
+    margin: 72px 67px 0 71px;
+    outline: 1px solid #e7e7e7;
+    border: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    width: 570px;
+  }
+}
+
+.program-selection__list {
+  padding: 0;
+  list-style: none;
+  height: 86px;
+  width: 280px;
+  margin: 22px 0 19px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @media (min-width: @tablet-width) {
+    height: 146px;
+    width: 290px;
+  }
+}
+
+.program-selection__item {
+  height: 30px;
+
+  @media (min-width: @tablet-width) {
+    height: 40px;
+  }
+}
+
 .program-selection__weight-loss {
   .oswald400();
   font-size: 16px;

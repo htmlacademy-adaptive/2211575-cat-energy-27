@@ -1,14 +1,28 @@
 .main-header {
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   min-height: 65px;
   width: 280px;
   padding: 0 20px;
 }
 
+@media (min-width: @tablet-width) {
+  width: 708px;
+  padding: 30px;
+}
+
 .main-header__logo {
   text-decoration: none;
+  height: 38px;
+  margin: 10px 0 0;
 }
+
+.main-header__logo img:nth-child(2) {
+  margin: 0 0 7px 58px;
+}
+
 
 @media (min-width: @tablet-width) {
   .main-header {
@@ -27,5 +41,6 @@
   .main-header {
     width: 1220px;
     padding: 0 110px;
+    justify-content: space-between;
   }
 }

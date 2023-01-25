@@ -1,12 +1,39 @@
+.property {
+  width: 140px;
+  height: 44px;
+}
+
+@media (min-width: @tablet-width) {
+  .property {
+    width: 252px;
+    height: 89px;
+    margin: 21px auto 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .property {
+    height: 89px;
+    width: 169px;
+  }
+}
+
 .property__text {
+  display: flex;
+  justify-content: space-between;
   .lato400();
   font-size: 12px;
   line-height: 16px;
+  margin: 0;
   .base-color();
 }
 
-.property__value-text {
-  .lato400();
-  font-size: 12px;
-  line-height: 16px;
+@media (min-width: @tablet-width) {
+  .property__text {
+    font-size: 16px;
+  }
+
+  .property__text:not(:last-child) {
+    margin: 0 0 16px 0;
+  }
 }

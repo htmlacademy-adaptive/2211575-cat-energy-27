@@ -1,24 +1,134 @@
+.form {
+  width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+    padding: 0 110px;
+  }
+}
+
 .form__title {
+  width: 259px;
+  height: 36px;
   font-size: 36px;
+  line-height: 36px;
   .oswald400();
+  margin: 0 0 0 20px;
+
+  @media (min-width: @tablet-width) {
+    margin: 65px 0 0 69px;
+    font-size: 60px;
+    width: 432px;
+    height: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 74px 0 0 0;
+  }
 }
 
 .form__subtitle {
+  margin: 37px 0 0 20px;
+  width: 226px;
+  height: 36px;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
   .oswald400();
+
+  @media (min-width: @tablet-width) {
+    width: 323px;
+    height: 60px;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 54px 0 0 70px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 56px 0 0 0;
+  }
+}
+
+.form__group {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+    width: 1220px;
+    height: 196px;
+    justify-content: space-between;
+    margin: 66px 0 0 0;
+  }
+}
+
+.form__button-box {
+  display: flex;
+  flex-direction: column;
+  height: 80px;
+  width: 280px;
+  padding: 0 20px;
+  margin: 34px 0 0 0;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    height: 52px;
+    width: 630px;
+    padding: 0;
+    margin: 54px 67px 0 71px;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 826px;
+    height: 52px;
+    margin: 61px 0 0 0;
+  }
 }
 
 .form__button {
+  width: 280px;
+  height: 40px;
+  padding: 0;
   font-size: 16px;
   text-transform: uppercase;
   border: none;
   .oswald400();
   .btn-color();
+
+  @media (min-width: @tablet-width) {
+    width: 282px;
+    height: 52px;
+    font-size: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 568px;
+    height: 52px;
+  }
 }
 
 .form__necessarily-text {
+  margin: 21px auto 0;
+  line-height: 16px;
+  width: 153px;
+  height: 16px;
   font-size: 14px;
   .lato400();
+
+  @media (min-width: @tablet-width) {
+    width: 174px;
+    height: 16px;
+    font-size: 16px;
+    margin: 15px 0 0 64px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 15px 0 0 84px;
+  }
 }
